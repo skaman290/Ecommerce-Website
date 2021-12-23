@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+
+.logo a {
+    text-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2) ;
+    font-weight: bold;
+    color: #2f2e41;
+    font-size: 2rem;
+}
+
+.searcharea{
+    position: fixed;
+    top: 50px;
+    right: 90px;
+    width: 175px;
+    height: 45px;
+    background-color: #ffff;
+    border: 1px solid rgba(165, 158, 245, 0.1);
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50% ;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.searchbox input{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #1f1f1f;
+    font-family: Calibri;
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
+.searcharea .fas{
+    margin-left: 45px;
+}
+
+.searchbox input::placeholder{
+    color: #1d1d1d;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-family: poppins; 
+}
+
+.section1{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-15%, -50%);
+}
+
+.section1 img{
+    height: 300px;
+}
+
+.section1button{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%, -50%);
+}
+
+.section1button h1,h2{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
+    color: #3d3d4a;
+    margin: 0px;
+    line-height: 60px;
+}
+
+.color{
+    color: #7A72FF;
+}
+
+.section1button h1{
+    letter-spacing: 28px;
+}
+
+.btn{
+ width: 150px;
+ height: 40px;
+ background-color: #2f2e41;
+ color: #fff;
+ margin-top: 20px;   
+ font-family: Calibri;
+ font-weight: 600;
+ letter-spacing: 0.5px;
+ font-size: 1rem;
+ outline: none;
+ cursor: pointer;
+ border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+ border: transparent;
+ display: flex;
+ justify-content:center ;
+ align-items: center;
+ box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: #6e64ff;
+    transition: all ease 0.5s;
+}
+
+.iconArea{
+    position: fixed;
+    top: 35%;
+    left:50px;
+    transform: translate(-35%);
+    border-radius: 20px;
+    background-color: #ffff;
+    box-shadow: 2px 2px 30px rgba(163, 90, 90, 0.2);
+    padding: 5px 0px;
+    z-index: 1;
+}
+
+.iconArea a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.iconArea a i{
+    color: rgba(39, 39, 39, 0.8);
+}
+
+.fab:hover{
+    color: red;
+}
+
+.productSection{
+    width: 85%;
+    background-color: #fff;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    padding: 40px 20px;
+    margin-top: -60px;
+    position: relative;
+    background-size: 1000px;
+    border-radius: 10px;
+}
+
+.productSection > h3{
+    margin: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2rem;
+    color: #323543;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.productBox{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    margin: 10px 30px;
+    position: relative;
+}
+
+.productBox img{
+    width: 180px;
+}
+
+.productBox p{
+    color: #4d4d4d70;
+    font-size: 0.9rem;
+    letter-spacing: 0.5;
+}
+
+.productBox a{
+    color: #2c2c2c;
+    font-size: 1rem;
+    font-family: poppins;
+}
+
+.Buybtn{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+    left: 50%;
+    bottom: -20px;
+    transform: translate(-50%);
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    color: #fff;
+    background: linear-gradient(120deg, #6b60ec 20%, #a166f4);
+    display: none;
+    animation: fade 0.2s;
+}
+
+.productBox:hover .Buybtn{
+    display: flex;
+}
+
+.productBox:hover{
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.productBox:hover a:last-child{
+    color: #fff;
+    transition: all ease 0.3s;
+}
+
+.about{
+    width: 85%;
+    margin: 50px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutBox{
+    width: 40%;
+    font-family: monospace;
+}
+
+.aboutBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.aboutBox h1{
+    color: #323543;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.aboutBox h4{
+    color: #323543;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aboutBox p{
+     font-size: 1rem;
+    color: #bdbdbd;
+    letter-spacing: 0.5px;
+}
+
+.notification{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+}
+
+.notification h1{
+    font-size: 2rem;
+    color: rgba(56,56,56);
+}
+
+.notificationInput{
+    width: 500px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    border-radius: 7% 7% 7% 7% / 50% 50% 50% 50%;
+}
+
+.notificationInput input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.notoficationBtn{
+    width: 120px;
+    height: 40px;
+    background-color: #202020;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+.notoficationBtn:hover{
+    background-color: #6b60ec;
+    transition: all ease 0.5s;
+}
+
+footer{
+    background-color: black !important;
+    padding: 20px;
+}
+
+footer p{
+    text-align: center;
+    color: #f2f2f2;
+}
